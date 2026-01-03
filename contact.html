@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Request an industrial refrigeration assessment: regulatory/refrigerant transition, energy & CO₂, uptime and heat recovery." />
+  <title>Contact | Request Assessment</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="./index.html" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-title">YOUR BRAND</span>
+          <span class="brand-sub">Industrial Refrigeration</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="./services.html">Services</a>
+        <a href="./insights.html">Insights</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html" aria-current="page" class="btn small">Request Assessment</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="./services.html">Services</a>
+      <a href="./insights.html">Insights</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html" aria-current="page" class="btn small primary">Request Assessment</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="chip"><span class="dot"></span> Fast first step • Fixed-scope proposal</div>
+        <h1>Request an Assessment</h1>
+        <p class="lead">
+          Tell us what you’re running and what’s driving change. We’ll respond with a fixed-scope proposal.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="intake">
+      <div class="wrap">
+        <div class="grid-2">
+          <article class="card">
+            <h2>Contact details</h2>
+            <p class="muted">
+              Email: <a class="link" href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a><br />
+              Region: UK & EU<br />
+              Typical stakeholders: Operations, Maintenance, HSE, Energy
+            </p>
+
+            <div class="divider"></div>
+
+            <h3 id="checklist">Checklist download</h3>
+            <p class="muted">Upload your checklist PDF somewhere public and paste the link below.</p>
+            <a class="btn primary" href="REPLACE_WITH_PDF_URL" target="_blank" rel="noopener">Download Checklist (PDF)</a>
+
+            <div class="divider"></div>
+
+            <h3>Optional: structured intake</h3>
+            <p class="muted">Google Form intake often converts better for enterprise sites.</p>
+            <a class="btn" href="REPLACE_WITH_GOOGLE_FORM_URL" target="_blank" rel="noopener">Open intake form</a>
+          </article>
+
+          <article class="panel service-block">
+            <div class="service-head" style="align-items:flex-start;">
+              <div>
+                <div class="meta"><span>Opens email client</span><span>works everywhere</span></div>
+                <h2>Quick message</h2>
+                <p class="muted">This creates an email draft with the right info. (No server needed.)</p>
+              </div>
+            </div>
+
+            <form class="form" id="mailform">
+              <div class="formrow">
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" placeholder="Jane Doe" />
+                </div>
+                <div>
+                  <label for="company">Company</label>
+                  <input id="company" name="company" placeholder="Company Ltd" />
+                </div>
+              </div>
+
+              <div class="formrow">
+                <div>
+                  <label for="role">Role</label>
+                  <input id="role" name="role" placeholder="Engineering / Facilities / Energy" />
+                </div>
+                <div>
+                  <label for="region">Country / Region</label>
+                  <input id="region" name="region" placeholder="UK / DE / EU" />
+                </div>
+              </div>
+
+              <div class="formrow">
+                <div>
+                  <label for="site">Site type</label>
+                  <select id="site" name="site">
+                    <option value="">Select…</option>
+                    <option>Cold storage / logistics</option>
+                    <option>Food processing</option>
+                    <option>Pharma / biotech</option>
+                    <option>Industrial process cooling</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="priority">Biggest priority</label>
+                  <select id="priority" name="priority">
+                    <option value="">Select…</option>
+                    <option>Regulatory / refrigerant risk</option>
+                    <option>Energy & CO₂</option>
+                    <option>Uptime / reliability</option>
+                    <option>Heat recovery</option>
+                    <option>Not sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" placeholder="System type (MW low-temp / kW ULT), refrigerants in use, approximate load, and what is driving change."></textarea>
+                <p class="hint">Tip: include refrigerants (NH₃ / CO₂ / HFC/HFO), approximate cooling load, and any audit deadlines.</p>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" class="btn primary" data-mailto>Open email draft</button>
+                <a class="btn" href="./services.html">View services</a>
+              </div>
+
+              <p class="hint">Replace the email address placeholder in this page and in <code>assets/main.js</code>.</p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap foot">
+      <div>
+        <div class="foot-title">YOUR BRAND</div>
+        <div class="foot-sub">Upgrades & optimisation for MW-scale industrial refrigeration plants.</div>
+        <div class="foot-small">© <span data-year></span> YOUR BRAND</div>
+      </div>
+      <div class="foot-links">
+        <a href="./index.html">Home</a>
+        <a href="./services.html">Services</a>
+        <a href="./insights.html">Insights</a>
+        <a href="./about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>
